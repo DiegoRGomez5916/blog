@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - My Blog</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="upper_bar">
+        <header>
+            <h1>Algorithms</h1>
+            <p>Graphs</p>
+        </header>
+        <nav>
+            <a href="../home_page.html">Home</a>
+            <a href="../about_page.html">About</a>
+            <a href="../contact_page.html">Contact</a>
+        </nav>
+    </div>
+
+    <main>
+        <section>
+            <h2>Max Flow Algorithm</h2>
+            <p><em>Posted on April 28th, 2025</em></p>
+            <br>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;While working on a school project I came across the Max Flow algorithm. This algorithm takes a graph data structure 
+                that represents a network that has a capacity along each edge and finds the configuration of the graph that maximizes the flow of the whole graph by pushing flow 
+                along the graph. This algorithm has many applications such as pipe network simulations, circuits, and wireless communications. The basis of this algorithm is a 
+                concept called augmenting paths and finding these augmenting paths is the condition that determines if the max flow has been reached or not.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An augmenting path is defined as a path where the residual capacity of each edge is non-zero. For example if each pipe along a path in a network of pipes has 
+                the ability to have more water flow through it then that is an augmenting path, however if even one pipe is at full capacity that path is not an augmenting path. 
+                Now the important part is for the residual capacity to be used as the parameter for if a pipe still has capacity since in order to find the true max flow there 
+                needs to be a way to back track on bad decisions made by the algorithm. This is because the algorithm works through trial and error.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The max flow algorithm uses these augmenting paths in a repeating process in order to maximize the flow of the network. The steps that the algorithm takes are 
+                “find an augmenting path”, “maximize the flow along the augmenting path by finding the bottleneck of the path”, and “repeat until there are no more augmenting 
+                paths”. Some people will argue that this is too vague to be an algorithm and there are some more specific cases that specify this process that can be called 
+                algorithms. Examples of these algorithms are known as the Ford-Fulkerson and Edmond-Karp algorithms. 
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The max flow can be improved upon by specifying the method used to search for the augmenting path. When it comes to finding a path along a graph the two options 
+                that can be used are the breath first search (BFS), and the depth first search (DFS). A BFS algorithm uses a first in first out search order to traverse the graph 
+                and find a path while a DFS algorithm uses a first in last out search order to traverse the graph and find a path. Generally the BFS algorithm is more efficient 
+                since it avoids pushing small amounts of flow through the graph many times and finds the augmenting paths with the largest residual capacity faster.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The max flow algorithm is an interesting process that solves unique graph problems and has roots in graph theory mathematics. This algorithm also has many real 
+                world uses as long as the problem can be represented by a graph with capacities. Some of the first things that come to mind are resource allocation and traffic 
+                optimization.
+                </p>
+        </section>
+    </main>
+    <div id="lower_bar">
+        <footer>
+            <p>&copy; 2025 My Blog. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
