@@ -1,0 +1,138 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5; /* Light background */
+    color: #1c1c1c; /* Dark text */
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(90deg, #fff, #ddd); /* Light gradient header */
+    color: #111;
+    padding: 60px 20px;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #ccc;
+}
+
+nav {
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+nav a {
+    color: #333;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #D5006B; /* Bright accent on hover */
+    transform: scale(1.05);
+}
+
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+article, section, form {
+    background: #fff; /* Light background for sections */
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+article img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+article:hover {
+    background: #f9f9f9;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 25px;
+    padding-left: 20px;
+    color: #444;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #1c1c1c;
+    font-size: 1em;
+}
+
+input:focus, textarea:focus {
+    border-color: #D5006B;
+    outline: none;
+}
+
+button {
+    background-color: #D5006B;
+    color: #fff;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #a3004d;
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #eaeaea;
+    color: #333;
+    margin-top: 60px;
+    font-size: 1.05em;
+    border-top: 3px solid #ccc;
+}
+
+#upper_bar {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+#lower_bar {
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+    z-index: 100;
+}
